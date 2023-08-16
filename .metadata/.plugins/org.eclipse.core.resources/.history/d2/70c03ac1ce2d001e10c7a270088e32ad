@@ -1,0 +1,19 @@
+package com.one.day1;
+
+public class FindNumberEqualAfterDecimal {
+	public static void main(String[] args) {
+		float a=12.78f;
+		float b=1.97f;
+		int c=(int) (a);
+		float f1=a-c;
+		int d=(int) (b);
+		float f2=b-d;
+		if(f1==f2) {
+			System.out.println("True");
+		}
+		else {
+			System.out.println("False");
+		}
+	}
+
+}

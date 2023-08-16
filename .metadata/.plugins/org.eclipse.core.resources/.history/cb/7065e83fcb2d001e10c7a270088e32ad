@@ -1,0 +1,24 @@
+package com.one.day1;
+
+import java.util.Arrays;
+
+public class RemoveSpace {
+	public static void main(String [] args) {
+//		String a="M[ou]ri!@#$%^ yan";
+//		String []ah=a.split("[\\[\\]\\!@#$%^& ]");
+//		String ch="";
+////		System.out.println(a.trim());
+//		for(int i=0;i<ah.length;i++) {
+//			ch=ch+ah[i];
+//		}
+//		System.out.println(ch);
+		
+		int a=10;
+		int b=70;
+		a=a+b;
+		b=a-b;
+		a=a-b;
+		System.out.println(a);
+		System.out.println(b);
+	}
+}

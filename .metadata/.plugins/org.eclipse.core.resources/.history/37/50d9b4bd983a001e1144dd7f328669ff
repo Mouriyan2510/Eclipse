@@ -1,0 +1,19 @@
+package Real;
+
+import java.util.Arrays;
+
+public class CHarrr {
+	public static void main(String[] args) {
+		String a="Java is a good language";
+		String []aa=a.split(" ");
+		String b="";
+		int l=0;
+		for(String f:aa) {
+			if(f.length()<l) {
+				b=b+f;
+			}
+		}
+		System.out.println(b);
+	}
+
+}

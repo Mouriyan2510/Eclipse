@@ -1,0 +1,24 @@
+package Real;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class DupliStream {
+	public static void main(String[] args) {
+		String a="onesofttechnologies";
+		char ch[]=a.toCharArray();
+		List<Character>li=new ArrayList<>();
+		for(Character g:ch) {
+			li.add(g);
+		}
+		
+		Map<Character, Long>mp= li.stream().collect(Collectors.groupingBy(j->j,Collectors.counting()));
+		System.out.println(mp);
+	}
+
+	
+
+}

@@ -1,0 +1,24 @@
+package com.one.day1;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class UseEmployeee {
+	public static void main(String [] args) {
+		Employee e1=new Employee("Mouriyan",24,50000);
+		Employee e2=new Employee("Varun",29,60000);
+		Employee e3=new Employee("MuthuRaman",28,56000);
+		Employee e4=new Employee("Kathir",26,45000);
+		Employee e5=new Employee("Naveen",27,61000);
+		
+		List<Employee>emps=Arrays.asList(e1,e2,e3,e4,e5);
+		
+		Collections.sort(emps);
+//		emps.forEach(y-> System.out.println(y));
+		
+		Collections.sort(emps,new SalarySort());
+		emps.forEach(y-> System.out.println(y));
+	}
+
+}

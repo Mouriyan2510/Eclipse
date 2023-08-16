@@ -1,0 +1,16 @@
+package com.one.day1;
+
+public class FindOccurance {
+	public static void main(String[] args) {
+		int a=145424;
+		int b=0;
+		while(a!=0) {
+			a=a/10;
+//			if(a==4) {
+				b=b+1;
+//			}
+		}
+		System.out.println(a);
+	}
+
+}

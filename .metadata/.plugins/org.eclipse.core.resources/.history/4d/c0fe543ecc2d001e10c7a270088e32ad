@@ -1,0 +1,15 @@
+package com.one.day1;
+
+public class IntLength {
+	public static void main(String[] args) {
+		int a=1234560;
+		int b=0;
+		while(a!=0) {
+			a=a/10;
+			if(a==4) {
+			b=b+1;
+			}
+		}
+		System.out.println(b);
+	}
+}

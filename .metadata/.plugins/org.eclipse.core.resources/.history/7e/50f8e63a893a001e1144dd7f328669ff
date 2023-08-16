@@ -1,0 +1,17 @@
+package Volante;
+
+public class Tiger1 {
+	 public static void main(String[] args) {
+		
+	
+	 
+	{
+		Animal a = new Animal();
+		Animal b = new Tiger();
+		a.print();
+		b.print();
+		
+		
+	}
+}
+}

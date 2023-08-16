@@ -1,0 +1,21 @@
+package exper;
+
+public class Palindrome {
+	
+	public static void main(String[] args) {
+		String a="Madam";
+		String b=a.toLowerCase();
+		String c="";
+		char ch[]=b.toCharArray();
+		for(Character g:ch) {
+			c=c+g;
+		}
+		if(b.equals(c)) {
+			System.out.println("Palindrome");
+		}
+		else {
+			System.out.println("Not");
+		}
+	}
+
+}

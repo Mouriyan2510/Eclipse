@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="JUNIT" project="Selenium" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="Day3.JUNIT" time="17.973" displayname="JUNIT" uniqueid="[engine:junit-vintage]/[runner:Day3.JUNIT]">
+    <testcase name="negativetest" classname="Day3.JUNIT" time="9.292" displayname="negativetest" uniqueid="[engine:junit-vintage]/[runner:Day3.JUNIT]/[test:negativetest(Day3.JUNIT)]"/>
+    <testcase name="postivetest" classname="Day3.JUNIT" time="8.681" displayname="postivetest" uniqueid="[engine:junit-vintage]/[runner:Day3.JUNIT]/[test:postivetest(Day3.JUNIT)]"/>
+  </testsuite>
+</testrun>

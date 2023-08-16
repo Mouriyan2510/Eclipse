@@ -1,0 +1,37 @@
+package com.one.day1;
+
+public class Pangram {
+    public static void main(String[] args) {
+        String sentence1 = "The quick brown fox jumps over the lazy dog";
+        String sentence2 = "Hello World";
+
+        System.out.println(isPangram(sentence1)); // Output: true
+        System.out.println(isPangram(sentence2)); // Output: false
+    }
+
+    public static boolean isPangram(String sentence) {
+        // Convert the sentence to lowercase to handle both uppercase and lowercase letters
+        sentence = sentence.toLowerCase();
+
+        // Create an array to track the presence of each letter
+        boolean[] letterPresent = new boolean[26];
+
+        // Iterate through each character of the sentence
+        for (char c : sentence.toCharArray()) {
+            // Ignore non-alphabetic characters
+            if (Character.isLetter(c)) {
+                // Set the corresponding letterPresent element to true
+                letterPresent[c - 'a'] = true;
+            }
+        }
+
+        // Check if all elements in the letterPresent array are true
+        for (boolean present : letterPresent) {
+            if (!present) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}

@@ -1,0 +1,21 @@
+package Real;
+
+public class Anagram {
+	public static void main(String[] args) {
+		String a="moUriyan";
+		String b="nayiruom";
+		String aa=a.toLowerCase();
+		String bb=b.toLowerCase();
+		char []ch=aa.toCharArray();
+		char []ch1=bb.toCharArray();
+		char temp=ch[0];
+		String s="";
+		for(int i=0;i<ch.length;i++) {
+			if(ch[i]<temp) {
+				s=s+ch[i];
+			}
+		}
+		System.out.println(s);
+	}
+
+}

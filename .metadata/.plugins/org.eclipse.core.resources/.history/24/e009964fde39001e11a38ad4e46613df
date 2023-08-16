@@ -1,0 +1,19 @@
+package Real;
+
+public class Pangram {
+	public static void main(String[] args) {
+		String a="abcdefghijklmnopqrstuvwxy";
+		boolean b=true;
+		for(char i='a';i<='z';i++) {
+			if(!a.contains(String.valueOf(i))) {
+				b=false;
+				break;
+			}
+		}
+		if (b)
+			System.out.println("Pangram String");
+		else
+			System.out.println("Not a Pangram String");
+	}
+	
+}

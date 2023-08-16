@@ -1,0 +1,33 @@
+package Day2;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.Select;
+
+public class Techlistic {
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\\\Selenium'\\\\WebDriver\\\\chromedriver.exe");
+		ChromeOptions op=new ChromeOptions();
+		op.addArguments("--remote-allow-origins=*","ignore-certificate-errors");
+		WebDriver web=new ChromeDriver(op);
+		web.manage().window().maximize();
+		web.get("https://www.techlistic.com/p/selenium-practice-form.html");
+		web.findElement(By.xpath("//input[@name='firstname']")).sendKeys("Mouriyan");
+		web.findElement(By.xpath("//input[@name='lastname']")).sendKeys("Anndurai");
+		web.findElement(By.xpath("//input[@id='sex-0']")).click();
+		web.findElement(By.xpath("//input[@id='exp-5']")).click();
+		web.findElement(By.xpath("//input[@id='datepicker']")).sendKeys("25 Oct 1997");
+		web.findElement(By.xpath("//input[@id='profession-1']")).click();
+		web.findElement(By.xpath("//input[@id='tool-2']")).click();
+		WebElement w= web.findElement(By.xpath("//select[@id='continents']"));
+		Select s=new Select(w);
+		s.selectByVisibleText("Australia");
+		web.findElement(By.xpath("//a[normalize-space()='Click here to Download File']")).click();
+		WebElement dropdown = web.findElement(By.id("selenium_commands"));
+        dropdown.findElement(By.xpath("//option[. = 'Wait Commands']")).click();
+	}
+
+}

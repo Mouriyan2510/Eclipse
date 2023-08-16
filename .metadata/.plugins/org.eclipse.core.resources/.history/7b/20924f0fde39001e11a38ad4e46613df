@@ -1,0 +1,11 @@
+package Real;
+
+public class Pangram {
+	public static void main(String[] args) {
+		String a="The quick brown fox jumps over the lazy dog";
+		for(int i='a';i<='z';i++) {
+			char character = (char) i;
+			System.out.println(character);
+		}
+	}
+}

@@ -1,0 +1,12 @@
+package Work;
+
+public class Stringgg {
+	public static void main(String[] args) {
+		java.lang.String a=" i am expert";
+		java.lang.String b="";
+		
+		for(int )
+		
+	}
+
+}

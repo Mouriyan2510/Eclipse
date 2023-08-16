@@ -1,0 +1,14 @@
+package Volante;
+
+public class Tiger1 {
+	 public static void main(String[] args) {
+		
+	 
+	{
+		Tiger b = new Tiger();
+		b.print();
+		
+		
+	}
+}
+}

@@ -1,0 +1,28 @@
+package exper;
+
+import java.util.Scanner;
+
+
+public class Prime {
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.println("ENter the number:");
+		int g=s.nextInt();
+		int count=0;
+		for(int i=2;i<g;i++) {
+			if(g%i==0) {
+				count=count+1;
+			}
+			else {
+				count=0;
+			}
+		}
+		if(count>0) {
+			System.out.println("NO");
+		}
+		else {
+			System.out.println("PRIME");
+		}
+	}
+
+}

@@ -1,0 +1,29 @@
+package Day3;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class JunitSample {
+	WebDriver web;
+	
+	@Before
+	public void beforeclass() {
+		System.setProperty("webdriver.chrome.driver", "C:\\\\Selenium'\\\\WebDriver\\\\chromedriver.exe");
+		ChromeOptions op=new ChromeOptions();
+		op.addArguments("--remote-allow-origins=*","ignore-certificate-errors");
+		web=new ChromeDriver(op);
+		web.manage().window().maximize();
+		web.get("https://phptravels.com/demo/");
+	}
+	
+	@Test
+	public void posClass() {
+		web.findElement(By.xpath("//input[@placeholder='First Name']")).sendKeys("Laptop");
+	}
+	
+
+}

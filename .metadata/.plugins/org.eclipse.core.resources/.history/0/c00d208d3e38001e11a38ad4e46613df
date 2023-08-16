@@ -1,0 +1,19 @@
+package com.one.day1;
+
+public class Thousand {
+	public static void main(String[] args) {
+		int a=11000;
+		for(int i=0;i<=a;i++) {
+		
+			if(i<=9999) {
+			System.out.println(i);
+		}
+		
+		else if(i>=10000) {
+			for(int j=0;j<=10000;j++)
+			System.out.println("a000"+(j++));
+		}
+		}
+	}
+	}
+

@@ -1,0 +1,82 @@
+package com.one.day1;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Task1 {
+	public static void main(String[] args) {
+//		int a = 5;
+		String a="ABCDEFG";
+		char[]ch=a.toCharArray();
+//		int b = 1;
+
+//		for (int i = 1; i <= a; i++) {
+//			for (int j = 1; j <= i; j++) {
+//				System.out.print(i);
+//			}
+//			System.out.println();
+//			
+////			b++;
+//		}
+		
+		for(int i=ch.length;i>=1;i--) {
+			for(int j=i;j>=1;j--) {
+				System.out.print(j);
+			}
+			System.out.println();
+		}
+		
+		
+		int []aa= {1,2,3,8,2,1};
+//		String b="";
+//		for(int i=0;i<aa.length;i++) {
+//			b=b+aa[i];
+//		}
+////		System.out.print(b);
+//		int h=Integer.parseInt(b);
+//		System.out.println(b);
+		
+//		List<Integer>dd=new ArrayList<>();
+//		for(int i=0;i<aa.length;i++) {
+//			dd.add(aa[i]);
+//		}
+//		dd.forEach(t-> {
+//		System.out.print(t);
+//		});
+		
+//		for(int i:aa) {
+//			total=total*10+i;
+//		}
+//		System.out.println(total);
+		
+//		for(int i=0;i<aa.length;i++) {
+//			if(aa[i]>1&&aa[i]<9) {
+//				total=total*10+aa[i];
+//			}
+//			else if(aa[i]>10&&aa[i]<100) {
+//				total=total*100+aa[i];
+//			}
+//		}
+//		
+//		System.out.println(total);
+//	}
+	
+//	int cc=0;
+//	int min=aa.length;
+//	for(int i=0;i<aa.length;i++) {
+//		for(int j=i+1;j<aa.length;j++) {
+//			if(aa[i]==aa[j] && j<min) {
+//				cc=aa[j];
+//				min=j;
+//			}
+//		}
+//		
+//	}
+//	System.out.println(cc+"----"+min);
+	}
+	
+	
+	
+
+}

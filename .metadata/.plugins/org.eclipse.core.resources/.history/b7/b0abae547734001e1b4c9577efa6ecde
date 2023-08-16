@@ -1,0 +1,16 @@
+package exper;
+
+public class Palindrome {
+	
+	public static void main(String[] args) {
+		String a="Humaam";
+		String b=a.toLowerCase();
+		String c="";
+		char ch[]=b.toCharArray();
+		for(Character g:ch) {
+			c=c+g;
+		}
+		System.out.println(c);
+	}
+
+}

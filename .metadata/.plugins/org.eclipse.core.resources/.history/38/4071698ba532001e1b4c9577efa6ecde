@@ -1,0 +1,24 @@
+package com.one.day1;
+
+import java.util.stream.LongStream;
+
+public class Factorial {
+	
+	public static int factorial(int n) {
+		if(n==0||n==1) {
+			return 1;
+		}
+		else {
+			return factorial(n);
+		}
+	}
+	
+	public static void main(String[] args) {
+		int a=7;
+		int r=a*factorial(a-1);
+		System.out.println(r);
+	}
+		}
+
+
+

@@ -1,0 +1,31 @@
+package Real;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class DuplicateUsingMap {
+	public static void main(String[] args) {
+		String a="onesofttechnologies";
+		char ch[]=a.toCharArray();
+		Map<Character, Integer>m=new HashMap<>();
+		for(Character f:ch) {
+			if(m.containsKey(f)) {
+				m.put(f, m.get(f)+1);
+			}
+			else {
+				m.put(f, 1);
+			}
+		}
+		
+		for(Character h:m.keySet()) {
+			int count=m.get(h);
+			if(count>1) {
+				System.out.println(h+"-->"+count);
+			}
+			else {
+				System.out.println("Unique-->"+h);
+			}
+		}
+	}
+
+}

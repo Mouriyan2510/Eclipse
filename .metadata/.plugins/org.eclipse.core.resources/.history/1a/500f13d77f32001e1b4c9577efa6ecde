@@ -1,0 +1,29 @@
+package com.one.day1;
+
+import java.util.Arrays;
+import java.util.Collections;
+
+public class Anagram {
+	public static void main(String[] args) {
+		String a="mouri";
+		String b="irom";
+		char ch[]=a.toCharArray();
+		char ch1[]=b.toCharArray();
+		Arrays.sort(ch);
+		Arrays.sort(ch1);
+		String gh="";
+		for(int i=0;i<ch.length;i++) {
+			gh=gh+ch[i];
+		}
+		String hg="";
+		for(int i=0;i<ch1.length;i++) {
+			hg=hg+ch1[i];
+		}
+		if(gh.equals(hg)) {
+			System.out.println("Given input is Anagram");
+		}
+		else {
+			System.out.println("Not Anagram");
+		}
+	}		
+}

@@ -1,0 +1,12 @@
+package Real;
+
+public class Real {
+    public static void main(String[] args) {
+        String xmlCode = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+                + "<root>\n"
+                + "    <element attribute=\"value\">Content</element>\n"
+                + "</root>";
+
+        System.out.println(xmlCode);
+    }
+}

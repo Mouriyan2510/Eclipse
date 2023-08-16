@@ -1,0 +1,23 @@
+package com.one.day1;
+
+public class UseCar {
+	public static void main(String [] args) {
+		Car c1=Car.getSingleton();
+		c1.brand="Audi";
+		c1.price=400090;
+		c1.model=2019;
+		Car c2=Car.getSingleton();
+		c2.brand="Maruti";
+		c2.price=120090;
+		c2.model=2020;
+		Car c3=Car.getSingleton();
+		c3.brand="MRK";
+		c3.price=87090;
+		c3.model=2070;
+		
+		System.out.println(c1);
+		System.out.println(c2);
+		System.out.println(c3);
+		
+	}
+}

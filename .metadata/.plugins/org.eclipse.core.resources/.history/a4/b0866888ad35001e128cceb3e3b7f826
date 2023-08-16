@@ -1,0 +1,24 @@
+package Day2;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class GuruTask {
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\\\Selenium'\\\\WebDriver\\\\chromedriver.exe");
+		ChromeOptions op=new ChromeOptions();
+		op.addArguments("--remote-allow-origins=*","ignore-certificate-errors");
+		WebDriver web=new ChromeDriver(op);
+		web.get("https://demo.guru99.com/test/delete_customer.php");
+		web.findElement(By.xpath(".//input[@name='cusid']")).sendKeys("Mouriyan2510");
+		web.findElement(By.xpath(".//input[@name='submit']")).click();
+		Alert a=web.switchTo().alert();
+		a.accept();
+		a.accept();
+		
+	}
+
+}

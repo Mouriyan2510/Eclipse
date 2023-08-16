@@ -1,0 +1,16 @@
+package com.one.day1;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class StreamTry {
+	public static void main(String[] args) {
+		List<Integer>nums= Arrays.asList(12,45,1,2,89);
+//		int sum= nums.stream().reduce((a,b)-> a+b).get();
+//		System.out.println(sum);
+		Integer sum = nums.stream()
+				  .reduce(Integer::sum).get();
+		System.out.println(sum);
+	}
+
+}

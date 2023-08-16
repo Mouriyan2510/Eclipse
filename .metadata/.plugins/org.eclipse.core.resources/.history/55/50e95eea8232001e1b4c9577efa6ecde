@@ -1,0 +1,22 @@
+package com.one.day1;
+
+public class Pangram {
+	public static void main(String[] args) {
+		String s= "The quick bron fox jumps over the lazy dog";
+		char[]ch=s.toCharArray();
+		String a="";
+		boolean ss=false;
+		for (char i = 'a'; i <= 'z'; i++)  {
+			for(int j=0;j<ch.length;j++) {
+				if(!s.contains(String.valueOf(ch))) {
+					ss=false;
+				}
+			}
+			if(s.contains(String.valueOf(ch))) {
+				System.out.println("It is Pangram");
+			}
+		}
+		
+	}
+	
+}

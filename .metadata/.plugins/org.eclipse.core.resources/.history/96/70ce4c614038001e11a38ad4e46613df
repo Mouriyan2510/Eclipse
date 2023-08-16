@@ -1,0 +1,21 @@
+package com.one.day1;
+
+public class Thousanddd {
+    public static void main(String[] args) {
+        int number1 = 123;
+        int number2 = 9;
+        int number3 = 45678;
+        int number4 = 10000; 
+
+        String formatted1 = String.format("%03d", number1);
+        String formatted2 = String.format("%04d", number2);
+        String formatted3 = String.format("%04d", number3);
+        String formatted4 = String.format("%04d", number4);
+        
+        
+        System.out.println(formatted1); // Output: "0123"
+        System.out.println(formatted2); // Output: "0009"
+        System.out.println(formatted3); // Output: "45678"
+        System.out.println(formatted4); 
+    }
+}

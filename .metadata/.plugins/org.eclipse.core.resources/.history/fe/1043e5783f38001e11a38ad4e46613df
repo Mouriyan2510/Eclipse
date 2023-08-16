@@ -1,0 +1,17 @@
+package com.one.day1;
+
+public class Thousand {
+    public static void main(String[] args) {
+        int a = 11000;
+
+        // Generate and print numbers from 1 to 999
+        for (int i = 1; i <= 9999; i++) {
+            System.out.println(i);
+        }
+
+        // Generate and print numbers from a001 to a100
+        for (int i = 1; i <= 10000; i++) {
+            System.out.println("a" + String.format("%003d", i));
+        }
+    }
+}

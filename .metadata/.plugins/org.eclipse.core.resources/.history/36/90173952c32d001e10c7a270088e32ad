@@ -1,0 +1,21 @@
+package com.one.day1;
+
+public class ReverseAString {
+	public static void main(String [] args) {
+		String one="VirginVinoliya";
+		StringBuilder two=new StringBuilder();
+		System.out.println(two.hashCode());
+		String three="";
+		char[]ch=one.toCharArray();
+		two.append(one);
+		two.reverse();
+//		System.out.println(two);//Using default method by string builder//Method 1;
+		
+		for(int i=ch.length-1;i>=0;i--) {
+			three=three+ch[i];
+		}
+//		System.out.println(three);//Using loop
+		
+		
+	}
+}

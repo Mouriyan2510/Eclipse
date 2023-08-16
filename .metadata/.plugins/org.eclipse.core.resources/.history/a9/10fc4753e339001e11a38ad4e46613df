@@ -1,0 +1,13 @@
+package Real;
+
+public class Re {
+	public static void main(String[] args) {
+		public ResponseEntity<String> getGreeting() {
+	        String message = "Hello, world!";
+	        HttpStatus status = HttpStatus.OK;
+
+	        return new ResponseEntity<>(message, status);
+	    }
+	}
+
+}

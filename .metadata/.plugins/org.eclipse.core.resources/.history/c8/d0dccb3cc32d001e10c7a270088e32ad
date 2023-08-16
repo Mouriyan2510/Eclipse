@@ -1,0 +1,12 @@
+package com.one.day1;
+
+public class ReverseANum {
+	public static void main(String[] args) {
+	int a=153;
+	int b=0;
+	for(int i=a;i>=0;i--) {
+		System.out.print(a);
+	}
+	
+	}
+}

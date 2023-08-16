@@ -1,0 +1,7 @@
+package Work;
+
+public class I1 implements I{
+	public void get() {
+		System.out.println("I'm Class1");
+	}
+}

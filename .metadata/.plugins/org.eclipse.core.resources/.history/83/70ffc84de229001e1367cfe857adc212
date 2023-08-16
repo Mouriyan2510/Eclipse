@@ -1,0 +1,24 @@
+package com.one.day1;
+
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+
+public class FunctionalExample {
+	public static void main(String [] args) {
+	
+	Function<String, Integer> f=y-> y.length();
+	System.out.println(f.apply("Mouriyan Annadurai"));
+
+	Consumer<Integer>g=t-> System.out.println(90+2);
+	g.accept(null);
+	
+	Supplier<Double>h=()-> Math.random();
+	System.out.println(h.get());
+	
+	Predicate<String>u=y-> y.length()>9;
+System.out.println(u.test("RajuBhai"));
+	
+	}
+}

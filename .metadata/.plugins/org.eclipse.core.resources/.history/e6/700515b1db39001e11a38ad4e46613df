@@ -1,0 +1,11 @@
+package Real;
+
+public class IntToChar {
+	public static void main(String[] args) {
+		int a=1234;
+		String b=String.valueOf(a);
+		char ch[]=b.toCharArray();
+		System.out.println(ch);
+	}
+
+}

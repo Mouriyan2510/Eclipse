@@ -1,0 +1,10 @@
+package com.one.day1;
+
+public class leap {
+	public static void main(String[] args) {
+		int a=2016;
+		for(int i=1900;i<=a;i=i+4) {
+			System.out.println(i+" is a leap year");
+		}
+	}
+}

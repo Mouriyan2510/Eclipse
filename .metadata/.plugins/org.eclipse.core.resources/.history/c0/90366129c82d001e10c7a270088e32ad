@@ -1,0 +1,11 @@
+package com.one.day1;
+
+import java.util.Arrays;
+
+public class RemoveSpace {
+	public static void main(String [] args) {
+		String a=" Mouri yan ";
+		String []ah=a.split(" ");
+	System.out.println(	Arrays.toString(ah));
+	}
+}

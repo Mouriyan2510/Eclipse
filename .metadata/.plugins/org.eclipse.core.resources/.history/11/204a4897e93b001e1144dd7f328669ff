@@ -1,0 +1,12 @@
+package com.one.CollectionStream;
+
+public interface Demo1 {
+	public static String name() {
+		return "Mouri";
+	}
+	default String place() {
+		return "Vdm";
+	}
+	
+
+}

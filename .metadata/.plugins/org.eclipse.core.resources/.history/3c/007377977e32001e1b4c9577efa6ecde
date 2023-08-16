@@ -1,0 +1,17 @@
+package com.one.day1;
+
+import java.util.Arrays;
+
+public class Anagram {
+	public static void main(String[] args) {
+		String a="mouri";
+		String b="iruom";
+		char ch[]=a.toCharArray();
+		char ch1[]=b.toCharArray();
+		Arrays.sort(ch);
+		Arrays.sort(ch1);
+		System.out.println(ch);
+		System.out.println(ch1);
+	}
+
+}

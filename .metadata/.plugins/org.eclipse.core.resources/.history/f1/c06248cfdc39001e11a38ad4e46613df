@@ -1,0 +1,26 @@
+package Real;
+
+import java.util.Arrays;
+
+public class Anagram {
+	public static void main(String[] args) {
+		String a="moUriyan";
+		String b="nayiruom";
+		String aa=a.toLowerCase();
+		String bb=b.toLowerCase();
+		char []ch=aa.toCharArray();
+		Arrays.sort(ch);
+		char []ch1=bb.toCharArray();
+		Arrays.sort(ch1);
+		String s="";
+		String s1="";
+		for(Character g:ch) {
+			s=s+g;
+		}
+		for(Character g:ch1) {
+			s1=s1+g;
+		}
+		System.out.println(s1);
+	}
+
+}

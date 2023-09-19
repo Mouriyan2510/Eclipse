@@ -9,7 +9,7 @@ public class Checking {
 
 			if(i==b) {
 				continue;
-			}
+			} 
 			
 			else {
 				System.out.println(i);

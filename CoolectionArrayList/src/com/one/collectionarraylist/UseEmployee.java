@@ -1,6 +1,8 @@
 package com.one.collectionarraylist;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class UseEmployee {
 	public static void main(String []args) {
@@ -8,11 +10,12 @@ public class UseEmployee {
 		Employee e2=new Employee("Raju", 45, "Male", 30000);
 		Employee e3=new Employee("Ragu", 35, "Female", 28000);
 		Employee e4=new Employee("Sivya", 25, "Female", 37000);
-		ArrayList <Employee> emp=new ArrayList <Employee>();
-		emp.add(e1);
-		emp.add(e2);
-		emp.add(e3);
-		emp.add(e4);
+//		ArrayList <Employee> emp=new ArrayList <Employee>();
+//		emp.add(e1);
+//		emp.add(e2);
+//		emp.add(e3);
+//		emp.add(e4);
+		List<Employee>emp=Arrays.asList(e1,e2,e3,e4);
 		int temp=e1.getSalary();
 		for(int i=0;i<emp.size();i++) {
 			if(emp.get(i).getAge()>35) {

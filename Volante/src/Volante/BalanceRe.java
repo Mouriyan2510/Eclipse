@@ -15,7 +15,7 @@ class BankAccount {
 
     public void deposit(double amount) {
         if (amount > 0) {
-            balance += amount;
+            balance =balance+ amount;
             System.out.println("Deposit successful. New balance: $" + balance);
         } else {
             System.out.println("Invalid deposit amount.");

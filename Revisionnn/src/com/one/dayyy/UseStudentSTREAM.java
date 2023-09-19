@@ -16,6 +16,16 @@ public class UseStudentSTREAM {
 		StudentStream s4=new StudentStream("MuthuRaman",'K',9000,24);
 		
 		List<StudentStream> studs=Arrays.asList(s1,s2,s3,s4);
+		
+		StudentStream th= studs.stream().filter(t-> t.getAge()>24).sorted(Comparator.comparing(StudentStream::getAge).reversed()).sorted(Comparator.comparing(StudentStream::getSalary).reversed()).limit(1).findFirst().get();
+		System.out.println(th);
+		studs.stream().sorted(Comparator.comparing(StudentStream::getAge).reversed()).skip(1).findFirst().get();
+		List<StudentStream>e= studs.stream().filter(y-> y.getInitial()=='A').collect(Collectors.toList());
+//		System.out.println(e);
+		StudentStream ss= studs.stream().sorted(Comparator.comparing(StudentStream::getAge).reversed()).skip(1).findFirst().get();
+//		System.out.println(ss);
+		String ddd= studs.stream().map(y-> y.getName()).skip(2).findFirst().get();
+//		System.out.println(ddd);
 //		System.out.println(studs);
 		List<StudentStream>varun=studs.stream().filter(t-> t.getSalary()>6000).sorted(Comparator.comparing(StudentStream::getAge).reversed()).sorted(Comparator.comparing(StudentStream::getInitial)).collect(Collectors.toList());
 //		varun.forEach(t-> System.out.println(t));
@@ -31,6 +41,7 @@ public class UseStudentSTREAM {
 		List<Integer>distinct=studs.stream().map(y-> y.getSalary()).sorted().distinct().collect(Collectors.toList());//distinct
 		StudentStream qwe=studs.stream().max(Comparator.comparing(StudentStream::getSalary)).get();
 		Map<String,StudentStream>yui=studs.stream().collect(Collectors.toMap(r->r.getName(), u->u));
+		System.out.println(yui);
 		long count=studs.stream().map(y-> y.getSalary()).count();//count
 		int fgf=studs.stream().map(y-> y.getSalary()).min(Integer::compareTo).orElse(null);
 		int minsal=studs.stream().min(Comparator.comparing(StudentStream::getSalary)).map(t-> t.getSalary()).get();
@@ -49,7 +60,7 @@ public class UseStudentSTREAM {
 		List<Integer> salag=salage.stream().flatMap(y-> y.stream()).collect(Collectors.toList());
 		List<String> name=studs.stream().map(y-> y.getName()).collect(Collectors.toList());
 		List<List<? extends Object>> obj=Arrays.asList(salary,name);//flatmap using object
-//		obj.forEach(y-> System.out.println(y));
+		obj.forEach(y-> System.out.println(y));
 		Map<String, StudentStream>fg=studs.stream().collect(Collectors.toMap(y->y.getName(), a->a));//collect by map
 		Set<StudentStream> ut = studs.stream().collect(Collectors.toSet());//collect by set
 		List<StudentStream> kgf= studs.stream().filter(t-> t.getSalary()>5000).sorted(Comparator.comparing(StudentStream::getAge).reversed()).sorted(Comparator.comparing(StudentStream::getInitial)).collect(Collectors.toList());

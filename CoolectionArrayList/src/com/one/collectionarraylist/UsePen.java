@@ -29,11 +29,11 @@ public class UsePen {
 //		}
 //	}
 		Pen temp=p1;
-	pens.forEach(a->{
-		if(a.getManufacture()>=2) {
-			temp=(a.getPrice()+(a.getPrice()*7)/100);
-		}
-	});
+//	pens.forEach(a->{
+//		if(a.getManufacture()>=2) {
+//			temp=(a.getPrice()+(a.getPrice()*7)/100);
+//		}
+//	});
 	}
 
 }

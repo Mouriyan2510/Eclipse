@@ -20,8 +20,8 @@ public class ty {
                 break;
             }
 
-            if (isValidWithdrawal(withdrawalAmount)) {
-                balance -= withdrawalAmount;
+            if (withdrawalAmount > 0 && withdrawalAmount <= balance) {
+                balance =balance - withdrawalAmount;
                 System.out.println("Withdrawal successful.");
                 System.out.println("Remaining balance: $" + balance);
             } else {
@@ -32,7 +32,7 @@ public class ty {
         System.out.println("Thank you for using the Bank System!");
     }
 
-    public static boolean isValidWithdrawal(double withdrawalAmount) {
-        return withdrawalAmount > 0 && withdrawalAmount <= balance;
-    }
+//    public static boolean isValidWithdrawal(double withdrawalAmount) {
+//        return withdrawalAmount > 0 && withdrawalAmount <= balance;
+//    }
 }

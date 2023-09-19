@@ -7,5 +7,9 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/HP/Downloads/itextpdf-5.5.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/Jsoup/jsoup-1.11.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/Jsoup/Pdf/pdfbox-2.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/Jsoup/OpenCsv/opencsv-4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/Jsoup/spire/machinist_2.12-0.6.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

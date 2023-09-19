@@ -1,7 +1,9 @@
 package com.one.collectionHashMap;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 
 public class UseEmployee {
 	public static void main(String []args) {
@@ -12,9 +14,11 @@ public class UseEmployee {
 		Employee e5=new Employee("Shamla",29,"Female",1160,50000,"Java Developer");
 		Employee e6=new Employee("Kathir",12,"Male",1190,12000,"Devops Developer");
 		Employee e7=new Employee("Ravi",28,"Male",1112,37000,"Full Stack Developer");
-		HashMap <Integer,Employee> emps=new HashMap <>();
+		HashMap <Integer,Employee> emps=new HashMap<>();
 		HashMap <Integer,Employee> feEmps=new HashMap <>();
 		HashMap <Integer,Employee> MaEmps=new HashMap <>();
+		
+		
 		emps.put(e1.getId(), e1);
 		emps.put(e2.getId(), e2);
 		emps.put(e3.getId(), e3);
@@ -22,9 +26,14 @@ public class UseEmployee {
 		emps.put(e5.getId(), e5);
 		emps.put(e6.getId(), e6);
 		emps.put(e7.getId(), e7);
-		for(Employee x:emps.values()) {
-			System.out.println(x);
-		}
+		
+		List<Employee>d= emps.values().stream().filter(t-> t.getId()==1191).toList();
+System.out.println(d);
+//		for(Employee x:emps.values()) {
+//			System.out.println(x);
+//		}
+		
+		
 //		for(Integer z:emps.keySet()) {
 //			System.out.println(emps.get(z));
 //		}

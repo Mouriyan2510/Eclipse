@@ -8,14 +8,13 @@ import java.util.Set;
 
 public class FindDuplicateTransInCsV {
 	  public static void main(String[] args) {
-	        String csvFilePath = "C:\\Users\\HP\\Desktop\\transactions.csv"; // Update with your CSV file path
+	        String csvFilePath = "C:\\Users\\HP\\Desktop\\New.txt"; // Update with your CSV file path
 	        Set<String> uniqueTransactions = new HashSet<>();
 	        Set<String> duplicateTransactions = new HashSet<>();
-
 	        try (BufferedReader br = new BufferedReader(new FileReader(csvFilePath))) {
 	            String line;
 	            while ((line = br.readLine()) != null) {
-	                // Assuming each line contains a transaction as a comma-separated value
+	                // Assuming each line contains a transact ion as a comma-separated value
 	                String[] transactionData = line.split(",");
 	                if (transactionData.length > 0) {
 	                    String transaction = transactionData[0]; // Adjust index as needed
@@ -37,6 +36,9 @@ public class FindDuplicateTransInCsV {
 	                System.out.println(duplicate);
 	            }
 	        }
+	        
+//	        System.out.println(duplicateTransactions);
+//	        System.out.println(uniqueTransactions);
 	    }
 
 }

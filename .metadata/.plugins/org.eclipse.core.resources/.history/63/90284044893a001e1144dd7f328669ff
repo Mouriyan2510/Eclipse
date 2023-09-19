@@ -1,9 +1,0 @@
-package Volante;
-
-class Tiger extends Animal
-{
-	public void print()
-	{
-		System.out.println("Welcome all to Product world");
-		}
-}

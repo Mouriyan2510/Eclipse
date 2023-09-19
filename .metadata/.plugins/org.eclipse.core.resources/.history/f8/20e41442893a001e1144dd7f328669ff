@@ -1,8 +1,0 @@
-package Volante;
-
-public class Animal {
-	public void print()
-	{
-		System.out.println("Welcome all to service world");
-}
-}

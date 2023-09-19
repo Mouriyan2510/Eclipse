@@ -1,9 +1,0 @@
-package practicing;
-
-public class RemoveJunkSpecialChar {
-	public static void main(String[] args) {
-		String a="Mou ri  ya  !@#$%^&*(){}||||~!@#$%^&*() n  A n na!@#$ d u r a i ";
-		a.replaceAll("[^a-zA-Z0-9]", "");
-		System.out.println(a);
-	}
-}

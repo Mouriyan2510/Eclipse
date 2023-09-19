@@ -6,4 +6,5 @@
  *
  */
 module For2 {
+	requires java.desktop;
 }

@@ -10,7 +10,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value="this.random"/>
 		<list key="findhistory">
+			<item value="this.random"/>
+			<item value="contains"/>
+			<item value="uniqueTransactions"/>
 			<item value="`"/>
 			<item value="parent"/>
 			<item value="web"/>
